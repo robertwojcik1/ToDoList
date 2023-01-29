@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c35fbc-d1e4-45a3-8e1b-c73590ec4a8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ToDoListProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dao/TaskDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Handlers/CreateCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Handlers/DeleteCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Handlers/ReadCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Handlers/UpdateCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Input/UserInputCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Task.java" afterDir="false" />
+    <list default="true" id="15c35fbc-d1e4-45a3-8e1b-c73590ec4a8d" name="Changes" comment="feature/added basic project structure and user command handlers">
+      <change afterPath="$PROJECT_DIR$/src/Dao/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/AuxiliaryMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDoListProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoListProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/CreateCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/CreateCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/DeleteCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/DeleteCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/ReadCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/ReadCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handlers/UpdateCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/UpdateCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,13 +41,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/robert/IdeaProjects/ToDoListProject/src/Model"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/robert/IdeaProjects/ToDoListProject/src/Model&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Model" />
@@ -58,6 +68,28 @@
       <option name="presentableId" value="Default" />
       <updated>1674944475467</updated>
     </task>
+    <task id="LOCAL-00001" summary="feature/added basic project structure and user command handlers">
+      <created>1674944892159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674944892159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature/added basic project structure and user command handlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/added basic project structure and user command handlers" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

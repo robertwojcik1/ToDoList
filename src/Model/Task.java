@@ -16,4 +16,20 @@ public class Task {
         this.deadline = deadline;
         this.priority = priority;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public LocalDateTime getDeadline() {
+        return deadline;
+    }
+
+    public Integer getPriority() {
+        return priority;
+    }
 }

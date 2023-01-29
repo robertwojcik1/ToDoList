@@ -1,9 +1,8 @@
 package Handlers;
 
-import DAO.TaskDao;
+import Dao.TaskDao;
 
 public class DeleteCommandHandler {
-    //DELETE;NAME=TASK4
 
     public static void handle(String command) {
         String[] parameterArray = command.split(";");
