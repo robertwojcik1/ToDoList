@@ -113,4 +113,25 @@ public class TaskDao {
             System.out.println(task);
         }
     }
-}
+
+    public static void getSortedTasks(String sortedBy, String order) {
+        List<Task> sortedTasks = new ArrayList<>();
+        String query = "SELECT * FROM TASK ORDER BY " + sortedBy + " " + order + ";";
+        try (
+                Connection connection = DriverManager.getConnection(Connect.DATABASE_URL, Connect.USER, Connect.PASSWORD);
+                Statement statement = connection.createStatement()
+        ) {
+            try (
+                    ResultSet resultSet = statement.executeQuery(query)
+            ) {
+                sortedTasks = AuxiliaryMethods.mapToTasks(resultSet);
+                for (Task sortedTask : sortedTasks) {
+                    System.out.println(sortedTask);
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("Bład połączenia z bazą danych");
+        }
+    }
+    }
+

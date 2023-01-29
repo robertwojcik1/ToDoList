@@ -19,7 +19,7 @@ public class UserInputCommand {
         } else if (line.contains("UPDATE")){
             UpdateCommandHandler.handle(line);
         } else if (line.contains("READ") && line.contains("ALL")) {
-            TaskDao.getAllTasks();
+            ReadCommandHandler.readAll(line);
         } else if (line.contains("READ")) {
             ReadCommandHandler.readOne(line);
         } else if (line.contains("DELETE")) {
