@@ -1,18 +1,32 @@
 package Dao;
 
 import Model.Task;
+import Utils.AuxiliaryMethods;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskDao {
 
-    static List<Task> tasks = new ArrayList<>();
-    
+    static List<Task> tasks;
+
+    public static void loadTasksFromDatabase() {
+        String query = "SELECT * FROM TASK;";
+        try (
+                Connection connection = DriverManager.getConnection(Connect.DATABASE_URL, Connect.USER, Connect.PASSWORD);
+                Statement statement = connection.createStatement()
+                ) {
+                    try (
+                            ResultSet resultSet = statement.executeQuery(query)
+                            ) {
+                        tasks = AuxiliaryMethods.mapToTasks(resultSet);
+                    }
+        } catch (SQLException e) {
+            System.out.println("Bład połączenia z bazą danych");
+        }
+    }
+
     public static void addTask(Task task) {
         tasks.add(task);
         addTaskToDatabase(task);

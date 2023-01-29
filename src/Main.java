@@ -13,11 +13,11 @@ public class Main {
         Main.run();
     }
     private static void run() {
-
+        TaskDao.loadTasksFromDatabase();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wprowadź komendę (EXIT aby wyjść): ");
         String line = scanner.nextLine();
-        while (line != "EXIT") {
+        while (!line.contains("EXIT")) {
             UserInputCommand command = new UserInputCommand(line);
             command.getCommandFromLine();
             line = scanner.nextLine();
