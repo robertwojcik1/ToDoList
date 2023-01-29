@@ -1,5 +1,6 @@
 package Input;
 
+import Dao.TaskDao;
 import Handlers.CreateCommandHandler;
 import Handlers.DeleteCommandHandler;
 import Handlers.ReadCommandHandler;
@@ -17,12 +18,14 @@ public class UserInputCommand {
             CreateCommandHandler.handle(line);
         } else if (line.contains("UPDATE")){
             UpdateCommandHandler.handle(line);
+        } else if (line.contains("READ") && line.contains("ALL")) {
+            TaskDao.getAllTasks();
         } else if (line.contains("READ")) {
             ReadCommandHandler.readOne(line);
         } else if (line.contains("DELETE")) {
             DeleteCommandHandler.handle(line);
         } else {
-            throw new RuntimeException("Nieprawiłowa komenda");
+            System.out.println("Nieprawidłowa komenda");;
         }
     }
 }

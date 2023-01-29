@@ -8,9 +8,6 @@ public class ReadCommandHandler {
     public static void readOne(String command) {
         String[] parameterArray = command.split(";");
         String name = parameterArray[1].substring(5);
-       // TaskDao.getTasks(name);
-    }
-    public static void readAll() {
-
+        TaskDao.getSelectedTask(name);
     }
 }

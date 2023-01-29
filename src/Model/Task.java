@@ -32,4 +32,28 @@ public class Task {
     public Integer getPriority() {
         return priority;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setDeadline(LocalDateTime deadline) {
+        this.deadline = deadline;
+    }
+
+    public void setPriority(Integer priority) {
+        if(priority >= 0) {
+            this.priority = priority;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", deadline=" + deadline +
+                ", priority=" + priority +
+                '}';
+    }
 }

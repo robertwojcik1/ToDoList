@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c35fbc-d1e4-45a3-8e1b-c73590ec4a8d" name="Changes" comment="feature/added basic project structure and user command handlers">
-      <change afterPath="$PROJECT_DIR$/src/Dao/Connect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/AuxiliaryMethods.java" afterDir="false" />
+    <list default="true" id="15c35fbc-d1e4-45a3-8e1b-c73590ec4a8d" name="Changes" comment="feature/saving and updating tasks in database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToDoListProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoListProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dao/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/CreateCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/CreateCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/DeleteCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/DeleteCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handlers/ReadCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/ReadCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handlers/UpdateCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handlers/UpdateCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Input/UserInputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input/UserInputCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,12 +69,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674944892159</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature/saving and updating tasks in database">
+      <created>1675008802093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675008802093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature/added basic project structure and user command handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature/added basic project structure and user command handlers" />
+    <MESSAGE value="feature/saving and updating tasks in database" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature/saving and updating tasks in database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
